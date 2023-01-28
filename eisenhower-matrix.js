@@ -65,9 +65,14 @@ class EisenhowerMatrix {
     }
 
     showTasks() {
-        const box = document.getElementById('not-urgent-not-important')
-        const boxTasks = this.tasks.filter(x => !x.urgent && !x.important);
-        boxTasks.forEach(((task) => this.showTask(task, box)));
+        this.tasks.filter(x => x.urgent && x.important)
+            .forEach(((task) => this.showTask(task, document.getElementById('urgent-important'))));
+        this.tasks.filter(x => !x.urgent && x.important)
+            .forEach(((task) => this.showTask(task, document.getElementById('not-urgent-important'))));
+        this.tasks.filter(x => x.urgent && !x.important)
+            .forEach(((task) => this.showTask(task, document.getElementById('urgent-not-important'))));
+        this.tasks.filter(x => !x.urgent && !x.important)
+            .forEach(((task) => this.showTask(task, document.getElementById('not-urgent-not-important'))));
     }
 
     showTask(task, container) {
