@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Eisenhower matrix</title>
+    <link href="eisenhower-matrix.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <table id="matrix" class="matrix">
+            <th></th>
+            <th>Urgent</th>
+            <th>Not urgent</th>
+            <tr>
+                <th>Important</th>
+                <td id="urgent-important" class="box"></td>
+                <td id="not-urgent-important" class="box"></td>
+            </tr>
+            <tr>
+                <th>Not important</th>
+                <td id="urgent-not-important" class="box"></td>
+                <td id="not-urgent-not-important" class="box"> </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="task.js"></script>
+    <script src="eisenhower-matrix.js"></script>
+    <script src="view.js"></script>
+</body>
+
+</html>
