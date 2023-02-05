@@ -1,0 +1,19 @@
+{
+  "name": "eisenhower-matrix",
+  "version": "1.0.0",
+  "description": "Eisenhower matrix",
+  "main": "eisenhower-matrix.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasz-duda/eisenhower-matrix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukasz-duda/eisenhower-matrix/issues"
+  },
+  "homepage": "https://github.com/lukasz-duda/eisenhower-matrix#readme"
+}
