@@ -2,9 +2,10 @@
   "name": "eisenhower-matrix",
   "version": "1.0.0",
   "description": "Eisenhower matrix",
-  "main": "eisenhower-matrix.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -r dist",
+    "build": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/lukasz-duda/eisenhower-matrix/issues"
   },
-  "homepage": "https://github.com/lukasz-duda/eisenhower-matrix#readme"
+  "homepage": "https://github.com/lukasz-duda/eisenhower-matrix#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
